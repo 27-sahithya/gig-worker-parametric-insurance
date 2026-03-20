@@ -130,7 +130,7 @@ An LSTM time-series model analyses 7-day weather forecasts, civic event calendar
 | Payments | Razorpay Sandbox / UPI Mock | Payout disbursement simulation |
 | Version Control | GitHub | Source code and CI/CD pipeline |
 
-React handles the UI, Spring Boot manages the backend APIs, and Python ML microservices operate independently. All external dependencies are abstracted — switching to live data needs only a config change.
+The architecture is deliberately decoupled. React handles the UI layer with no backend awareness. Spring Boot exposes clean REST endpoints. Python ML microservices communicate via internal API calls and can be retrained or swapped without touching the core application. The mock API abstraction layer means every external dependency can be replaced with live data in a single configuration change.
 
 ---
 
