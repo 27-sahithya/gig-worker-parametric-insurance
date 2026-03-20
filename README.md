@@ -149,6 +149,7 @@ The complete end-to-end flow spans worker registration, policy activation, real-
 - **Payout Calculation:** Payout computed proportionally on hours lost during the disruption window, capped at the plan's weekly maximum.
 - **Funds Credited:** Transfer to UPI ID, bank account, or wallet — within minutes to hours depending on plan tier.
 - **Notification:** SMS and in-app confirmation sent at every stage, giving the worker full visibility.
+
 ![Rakshak Platform - End-to-End Workflow](workflow.png)
 ---
 
@@ -239,12 +240,8 @@ The Phase 1 prototype demonstrates the foundational user journey using mock data
 
 ### ▸ Live in the Prototype
 
-- Worker registration, login, and form validation flows
+- Worker registration and login flows
 - Plan selection screen with tier comparison and feature details
-- Document upload interface with mock KYC processing feedback
-- Personal dashboard showing active plan, coverage status, and claim history
-- Simulated disruption trigger — manual override simulating a heavy rainfall event, walking through the full auto-claim sequence visually
-- Claim status tracker showing the processing pipeline in real time (mocked)
 
 > **Why Mock APIs?** OpenWeatherMap's free tier returned stale and inaccurate hyperlocal data for multiple Indian cities during our testing. Government civic alert APIs have no standardised format or consistent uptime. We built mock API endpoints with configurable parameters instead — enabling reliable demonstration of every trigger scenario. Switching from mock to live data requires only a configuration change, not a code rewrite.
 
