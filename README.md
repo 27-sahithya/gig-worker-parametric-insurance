@@ -149,7 +149,7 @@ The complete end-to-end flow spans worker registration, policy activation, real-
 - **Payout Calculation:** Payout computed proportionally on hours lost during the disruption window, capped at the plan's weekly maximum.
 - **Funds Credited:** Transfer to UPI ID, bank account, or wallet — within minutes to hours depending on plan tier.
 - **Notification:** SMS and in-app confirmation sent at every stage, giving the worker full visibility.
-
+![Rakshak Platform - End-to-End Workflow](workflow.png)
 ---
 
 ## 🚨 9. Adversarial Defense & Anti-Spoofing Strategy
@@ -261,4 +261,5 @@ The Phase 1 prototype demonstrates the foundational user journey using mock data
 ---
 
 *RAKSHAK | Protecting the people who keep India moving.*
+---
 *Guidewire DEVTrails 2026 • Phase 1 Submission • March 2026*
