@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #0ea5e9; /* Professional Blue */
+  --color-primary-dark: #0284c7;
+  --color-secondary: #06b6d4; /* Cyan for modern vibe */
+  --color-background-light: #f8fafc;
+  --color-background-dark: #020617;
+}
+
+:root {
+  --bg-color: var(--color-background-light);
+  --text-color: #0f172a;
+  --card-bg: #ffffff;
+}
+
+[data-theme="dark"] {
+  --bg-color: var(--color-background-dark);
+  --text-color: #f8fafc;
+  --card-bg: #1e293b;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Inter', sans-serif;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Glassmorphism utility */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+
+[data-theme="dark"] .glass-panel {
+  background: rgba(15, 23, 42, 0.7);
+  border: 1px solid rgba(14, 165, 233, 0.15);
+}
+
+h1, h2, h3, h4 {
+  color: #38bdf8 !important;
+}
+
+.text-gold { color: #fbbf24; }
+.text-cyan { color: #22d3ee; }
+.text-sky { color: #38bdf8; }
+.text-blackish { color: #020617; }
